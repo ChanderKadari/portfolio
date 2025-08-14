@@ -7,6 +7,9 @@
 html{
   scroll-behavior: smooth;
 }
+html,body{
+    overflow-x:hidden
+}
 .navbar {
   background-color: #222;
   color: white;
@@ -472,6 +475,14 @@ About~.img1{
   .about .hire {
     margin-top: 20px;
   }
+ .about a{
+    font-size: 12px;
+        display: inline-block;
+        max-width: 150px; /* limit width */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+  }
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -508,4 +519,5 @@ About~.img1{
     top: 20px;
   }
 }
+
 
